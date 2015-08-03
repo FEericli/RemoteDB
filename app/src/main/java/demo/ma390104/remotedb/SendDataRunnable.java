@@ -46,7 +46,7 @@ public class SendDataRunnable implements Runnable {
             OutputStream stream = connection.getOutputStream();
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(stream, "UTF-8"));
             String c = composePostString(params);
-            Log.d("int_sdr_54", c);
+
             writer.write(c);
 
             writer.flush();
